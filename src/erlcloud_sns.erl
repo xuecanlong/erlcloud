@@ -604,7 +604,9 @@ encode_attributes(Attributes) ->
 
 encode_attribute_name(custom_user_data) -> "CustomUserData";
 encode_attribute_name(enabled) -> "Enabled";
-encode_attribute_name(token) -> "Token".
+encode_attribute_name(token) -> "Token";
+encode_attribute_name(userid) -> "UserId";
+encode_attribute_name(channelid) -> "ChannelId".
 
 encode_permissions(Permissions) ->
     [encode_permission(P) || P <- Permissions].
